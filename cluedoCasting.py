@@ -1,5 +1,9 @@
 # Steph Poleij
 # 99033734
+reqOpleiding , reqHuilen, geelen1 ,geelen2 ,geelen3, geelen4 ,geelen5 = (None,)*7
+dewit1 ,dewit2 ,dewit3 ,dewit4 ,dewit5 ,groenewoud1, groenewoud2 ,groenewoud3 ,groenewoud4, groenewoud5 = (None,)*10
+roodhart1 ,roodhart2 ,roodhart3 ,roodhart4 ,roodhart5 ,roodhart6 ,pimpel1 ,pimpel2 ,pimpel3, pimpel4, pimpel5, pimpel6 = (None,)*12
+blaauw1, blaauw2, blaauw3, blaauw4, blaauw5, blaauw6 = (None,)*6
 
 print ("Welkom bij Talent's Action.\nWij zoeken geschikte acteurs voor ons opkomende project, Cluedo!\nBeantwoord eerst de volgende vragen.")
 naam = input ('Wat is uw naam?: \n')
@@ -23,7 +27,7 @@ if geslacht in ['man', 'Man', 'MAN', 'een man']:
     groenewoud1 = True
     pimpel1 = True
 if geslacht in ['vrouw', 'VROUW', 'Vrouw', 'een vrouw']:
-    dewi1t = True
+    dewit1 = True
     roodhart1 = True
     blaauw1 = True
 lengte = int(input ('Hoe lang bent u? Rond af in hele getallen, in cm: \n'))
@@ -36,7 +40,7 @@ if lengte < 185:
     roodhart2 = True
     blaauw2 = True
 
-leeftijd = int(input)('Hoe oud bent u? \n')
+leeftijd = int(input('Hoe oud bent u? \n'))
 if leeftijd in range (18,25):              
     roodhart3 = True
 elif leeftijd in range (30,40):            
@@ -82,13 +86,30 @@ if aantrekkelijk in ['ja', 'j', 'J' 'Ja' 'JA']:
     blaauw6 = True
     roodhart6 = True
 
-# DE REQUIREMENTS PER PERSOON:
-# GEELEN        geslacht = man  lengte = 185    leeftijd = 30-40    gewicht = <90  haarkleur = blond
-# DEWIT             vrouw       <185        41-55       >90     grijs
-# GROENEWOUD    
-# ROODHART
-# PIMPEL
-# BLAAUW
+# hier hoeven de auditie variabelen niet eens, je kan ook alleen de print doen. maar toch heb ik het voor het geval dat ik iets moet uitbereiden.
 
-if 
-auditieGeelen = True
+if reqOpleiding and reqHuilen and geelen1 and geelen2 and geelen3 and geelen4 and geelen5 == True:
+    auditieGeelen = True
+    print ('Je mag op auditie voor de rol van Kolonel van Geelen')
+
+if reqOpleiding and reqHuilen and dewit1 and dewit2 and dewit3 and dewit4 and dewit5 == True:
+    auditieDewit = True
+    print ('Je mag op auditie voor de rol van Mevrouw de Wit')
+if reqOpleiding and reqHuilen and groenewoud1 and groenewoud2 and groenewoud3 and groenewoud4 and groenewoud5 == True:
+    auditieGroenewoud = True
+    print ('Je mag op auditie voor de rol van Dominee Groenewoud')
+
+if reqOpleiding and reqHuilen and roodhart1 and roodhart2 and roodhart3 and roodhart4 and roodhart5 and roodhart6 == True:
+    auditieRoodhart = True
+    ('Je mag op auditie voor de rol van Rosa Roodhart')
+
+if reqOpleiding and reqHuilen and pimpel1 and pimpel2 and pimpel3 and pimpel4 and pimpel5 and pimpel6 == True:
+    auditiePimpel = True
+    print ('Je mag op auditie voor de rol van Professor Pimpel')
+
+if reqOpleiding and reqHuilen and blaauw1 and blaauw2 and blaauw3 and blaauw4 and blaauw5 and blaauw6 == True:
+    auditieBlaauw = True
+    print ('Je mag op auditie voor de rol van Mevrouw Blaauw van Draet')
+
+else:
+    print ('Je mag helaas niet op auditie.')
